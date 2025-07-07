@@ -1,4 +1,3 @@
-// eslint.config.mjs
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
@@ -10,16 +9,8 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-export default [
-  // Convert legacy config
+const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
-
-  // Add your own rules
-  {
-    files: ["**/*.{js,ts,jsx,tsx}"],
-    rules: {
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-page-custom-font": "off",
-    },
-  },
 ];
+
+export default eslintConfig;
