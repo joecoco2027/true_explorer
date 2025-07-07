@@ -3,6 +3,39 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-blue-50: #f0f9ff;
+  --color-blue-100: #e1f3fd;
+  --color-blue-200: #bbe8fc;
+  --color-blue-300: #80d6f9;
+  --color-blue-400: #3cc1f4;
+  --color-blue-500: #13a9e4;
+  --color-blue-600: #0689c3;
+  --color-blue-700: #066d9e;
+  --color-blue-800: #0a5c82;
+  --color-blue-900: #0e4c6c;
+  --color-blue-950: #0b3954;
+  --color-teal-50: #eefffc;
+  --color-teal-100: #c5fffa; 
+  --color-teal-200: #8bfff5; 
+  --color-teal-300: #4afef0;
+  --color-teal-400: #15ece2;
+  --color-teal-500: #00d0c9;
+  --color-teal-600: #00a8a5;
+  --color-teal-700: #008080;
+  --color-teal-800: #066769;
+  --color-teal-900: #0a5757;
+  --color-teal-950: #003235;
+  --color-neutral-50: #f6f6f6;
+  --color-neutral-100: #e7e7e7;
+  --color-neutral-200: #d1d1d1;
+  --color-neutral-300: #b0b0b0;
+  --color-neutral-400: #888888;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #5d5d5d;
+  --color-neutral-700: #4f4f4f;
+  --color-neutral-800: #454545;
+  --color-neutral-900: #3d3d3d;
+  --color-neutral-950: #262626;
 }
 
 @theme inline {
@@ -18,6 +51,29 @@
     --foreground: #ededed;
   }
 }
+
+@layer base {
+  a[href] {
+    text-decoration-style: wavy;
+  }
+  .text-stroke {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke: 1px white; 
+    color: transparent; 
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke-width: 2px;
+
+  }
+  .text-stroke-black{
+    -webkit-text-stroke-color: black;
+  }
+}
+
+
 
 body {
   background: var(--background);

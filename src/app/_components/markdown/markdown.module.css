@@ -1,0 +1,7 @@
+
+.markdown > h2 + p::first-line {
+   font-size: 1.125rem;
+   line-height: 1.375;
+   letter-spacing: 0.1em;
+   color: red;
+}
