@@ -37,7 +37,6 @@ export default function HeaderNav() {
   const handMode = () => {
     const html = document.getElementsByTagName("html");
     const currentMode = html[0].className;
-    const modeBtn = document.getElementById("btn-mode");
 
     if (currentMode === "dark") {
       html[0].className = "light";

@@ -30,8 +30,6 @@ type BlogPageProps = { params : {
 
 export default async function DiariesPage({ params } : BlogPageProps){
     const { metadata } = await getDiariesMetadata(params.slug);
-    const title = `${metadata.title ?? ""}`;
-    const descr = `${metadata.description ?? ""}`;
     const cover = `${metadata.cover ?? ""}`
     const DiariesMarkdown = dynamic(() => import("@/diaries/" + params.slug + ".mdx"));
     return (
