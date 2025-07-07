@@ -5,7 +5,7 @@ export default function TopSection(){
     return (
         <div className={`h-200 bg-[url(/images/bg2.png))] bg-cover bg-center bg-no-repeat bg-white dark:bg-gray-900`}>
             <div className="absolute top-130 left-75 text-black">
-                <h1 className="text-5xl scale-y-200 font-extrabold fill-transparent text-2xl text-stroke-white">I'M ABDULAZIZ M.</h1>
+                <h1 className="text-5xl scale-y-200 font-extrabold fill-transparent text-2xl text-stroke-white">I&aposM ABDULAZIZ M.</h1>
                 <br />
                 <p>Explore. Reflect. Evolve</p>
                 <p>Real reactions, raw insights and remarkable</p>

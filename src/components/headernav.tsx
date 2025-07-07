@@ -4,13 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { FaBeer } from 'react-icons/fa';
 import { useState, useEffect } from "react";
 
 export default function HeaderNav() {
   const router = useRouter()
   const [selectedMode, setSelectedMode] = useState("dark");
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
   const [isSticky, setIsSticky] = useState(false); 
   const navz = [
     { label: "Reacts", href: "/reacts"},

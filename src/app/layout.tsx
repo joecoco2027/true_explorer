@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { crimson, workSans, overpassMono} from "@/app/_components/fonts/fonts"
-import Link from "next/link";
-import { ThemeProvider } from 'next-themes'; 
 import Providers from "./providers";
 import HeaderNav from "@/components/headernav";
 
