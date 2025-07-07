@@ -11,8 +11,10 @@ const compat = new FlatCompat({
 });
 
 export default [
+  // Convert legacy config
   ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
 
+  // Add your own rules
   {
     files: ["**/*.{js,ts,jsx,tsx}"],
     rules: {
