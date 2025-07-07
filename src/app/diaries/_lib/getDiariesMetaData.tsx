@@ -25,8 +25,8 @@ export async function getDiariesMetadata(slug: string): Promise<DiariesPostData>
         } else {
             throw new Error(`Unable to Find Metadata for ${slug}.mdx`);
         }
-    } catch (error: any){
-        console.error(error?.message);
+    } catch (error){
+        console.error((error as Error)?.message);
         return notFound();
     }
 }
