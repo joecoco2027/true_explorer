@@ -1,4 +1,9 @@
-import type { Metadata } from "next";
+import dynamic from "next/dynamic";
+import { getDiariesMetadata } from "../_lib/getDiariesMetaData";
+import type { Metadata } from "next/types";
+import { getAllDiariesData } from "../_lib/getAllDiariesData";
+import markdownStyles from "@/app/_components/markdown/markdown.module.css";
+import Image from "next/image";
 
 export async function generateMetadata({
   params,
