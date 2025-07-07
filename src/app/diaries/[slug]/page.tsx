@@ -7,31 +7,28 @@ import type { Metadata } from "next";
 import markdownStyles from "@/app/_components/markdown/markdown.module.css";
 import Image from "next/image";
 
-type BlogPageProps = { params: { slug : string }};
-
 // ✅ Fix typing here — use inline type
 export async function generateMetadata(
-  { params, }: BlogPageProps
+  { params }: { params: { slug: string } }
 ): Promise<Metadata> {
   const { metadata } = await getDiariesMetadata(params.slug);
-  if (metadata){
-    return metadata;
-  } else {
-    throw new Error(`No metadata Found for blog post: ${params.slug}`)
-  }
+  return metadata;
 }
 
 // ✅ This is for SSG
 export async function generateStaticParams() {
   const posts = await getAllDiariesData();
-  const blogStaticParams = posts.map((post) => ({
+  return posts.map((post) => ({
     slug: post.slug,
   }));
-  return blogStaticParams;
 }
 
 // ✅ Page component — use inline type, not custom one!
-export default async function DiariesPage({ params }: BlogPageProps){
+export default async function DiariesPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { metadata } = await getDiariesMetadata(params.slug);
   const cover = metadata.cover ?? "";
 
