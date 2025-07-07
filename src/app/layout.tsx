@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { crimson, workSans, overpassMono} from "@/app/_components/fonts/fonts"
 import Providers from "./providers";
 import HeaderNav from "@/components/headernav";
 
@@ -24,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className="light" suppressHydrationWarning>
-      <body className={`${crimson.variable} ${workSans.variable} ${overpassMono.variable} antialiased`}>
+      <body className={`antialiased`}>
         <Providers>
           <HeaderNav/>
           {children}
