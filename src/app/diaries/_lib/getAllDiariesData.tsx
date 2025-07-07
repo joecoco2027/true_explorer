@@ -21,6 +21,6 @@ export async function getAllDiariesData(): Promise<DiariesPostData[]> {
         return result; 
     }catch (error) {
         console.error(error); 
-        return []
+        return [];
     }
 }
