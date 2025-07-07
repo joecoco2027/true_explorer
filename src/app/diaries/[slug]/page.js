@@ -8,7 +8,11 @@ import Image from "next/image";
 
 export async function generateMetadata({ params }) {
   const { metadata } = await getDiariesMetadata(params.slug);
-  return metadata;
+  if (metadata) {
+    return metadata;
+  } else  {
+    throw new Error(`No metadata found for blog post: ${params.slug}`)
+  }
 }
 
 export async function generateStaticParams() {
