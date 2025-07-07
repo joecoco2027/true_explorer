@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import markdownStyles from "@/app/_components/markdown/markdown.module.css";
 import Image from "next/image";
 
-// ✅ Correct inline typing
+// ✅ Fix typing here — use inline type
 export async function generateMetadata(
   { params }: { params: { slug: string } }
 ): Promise<Metadata> {
@@ -15,15 +15,15 @@ export async function generateMetadata(
   return metadata;
 }
 
-// ✅ Static paths (for SSG)
+// ✅ This is for SSG
 export async function generateStaticParams() {
-  const diaries = await getAllDiariesData();
-  return diaries.map((diary) => ({
-    slug: diary.slug,
+  const posts = await getAllDiariesData();
+  return posts.map((post) => ({
+    slug: post.slug,
   }));
 }
 
-// ✅ Correct page function with inline prop typing
+// ✅ Page component — use inline type, not custom one!
 export default async function DiariesPage({
   params,
 }: {
@@ -40,7 +40,7 @@ export default async function DiariesPage({
     <div
       className={`prose lg:prose-xl dark:prose-invert container mx-auto p-4 ${markdownStyles.markdown}`}
     >
-      <Image src={cover} height={200} width={200} alt="cover image" />
+      <Image src={cover} width={200} height={200} alt="cover image" />
       <DiariesMarkdown />
     </div>
   );
