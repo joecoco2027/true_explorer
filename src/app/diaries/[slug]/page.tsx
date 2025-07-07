@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export async function generateMetadata({
     params,
-}: DiariesPageProps) : Promise<Metadata> {
+}: PageProps) : Promise<Metadata> {
     const { metadata } = await getDiariesMetadata(params.slug);
     if (metadata) {
         return metadata;
@@ -24,11 +24,11 @@ export async function generateStaticParams(){
 }
 
 
-type DiariesPageProps = { params : {
+type PageProps = { params : {
     slug: string 
 }}; 
 
-export default async function DiariesPage({ params } : DiariesPageProps){
+export default async function DiariesPage({ params } : PageProps){
     const { metadata } = await getDiariesMetadata(params.slug);
     const cover = `${metadata.cover ?? ""}`
     const DiariesMarkdown = dynamic(() => import("@/diaries/" + params.slug + ".mdx"));
