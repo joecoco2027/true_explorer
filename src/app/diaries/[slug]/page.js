@@ -1,21 +1,16 @@
-// src/app/diaries/[slug]/page.tsx
+// src/app/diaries/[slug]/page.js
 
 import dynamic from "next/dynamic";
 import { getDiariesMetadata } from "@/app/diaries/_lib/getDiariesMetaData";
 import { getAllDiariesData } from "@/app/diaries/_lib/getAllDiariesData";
-import type { Metadata } from "next";
 import markdownStyles from "@/app/_components/markdown/markdown.module.css";
 import Image from "next/image";
 
-// ✅ Fix typing here — use inline type
-export async function generateMetadata(
-  { params }: { params: { slug: string } }
-): Promise<Metadata> {
+export async function generateMetadata({ params }) {
   const { metadata } = await getDiariesMetadata(params.slug);
   return metadata;
 }
 
-// ✅ This is for SSG
 export async function generateStaticParams() {
   const posts = await getAllDiariesData();
   return posts.map((post) => ({
@@ -23,12 +18,7 @@ export async function generateStaticParams() {
   }));
 }
 
-// ✅ Page component — use inline type, not custom one!
-export default async function DiariesPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function DiariesPage({ params }) {
   const { metadata } = await getDiariesMetadata(params.slug);
   const cover = metadata.cover ?? "";
 
