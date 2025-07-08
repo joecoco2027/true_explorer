@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   if (metadata) {
     return metadata;
   } else  {
-    throw new Error(`No metadata found for blog post: ${params.slug}`)
+    throw new Error(`No metadata found for blog post: ${params.slug}`);
   }
 }
 
@@ -32,7 +32,7 @@ export default async function DiariesPage({ params }) {
 
   return (
     <div
-      className={`prose lg:prose-xl dark:prose-invert container mx-auto p-4 ${markdownStyles.markdown}`}
+      className={`prose lg:prose-xl dark:prose-invert container mx-auto p-4 ${markdownStyles.markdown} flex flex-col w-200 self-center items-center`}
     >
       <Image src={cover} width={200} height={200} alt="cover image" />
       <DiariesMarkdown />

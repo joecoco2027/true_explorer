@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function HeaderNav() {
-  const router = useRouter()
+  const router = useRouter();
   const [selectedMode, setSelectedMode] = useState("dark");
   const { setTheme } = useTheme();
   const [isSticky, setIsSticky] = useState(false); 

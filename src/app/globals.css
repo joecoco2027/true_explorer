@@ -43,6 +43,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --text-tiny: 8em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,7 +70,7 @@
 
   }
   .text-stroke-black{
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: black;   
   }
 }
 

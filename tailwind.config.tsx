@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-    plugins: [require("@tailwindcss/typography")],
+    plugins: [require("@tailwindcss/typography"), require('@tailwindcss/aspect-ratio')],
     darkMode: 'class',
     content: [
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
