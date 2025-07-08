@@ -12,10 +12,10 @@ export default function About(){
             I am <span className="text-white font-bold text-2xl">Abdulaziz Hemed Mafita</span> and 
             I was born on 11th December, Tanzanian youth. 
             The smart, gorgeous, mercies face and the hard-to-poke smile on
-             somebody’s face except for a short period of time are my easily
+             somebody&apos;s face except for a short period of time are my easily
               seen physical appearances. Those who do not know me might actually 
-              think that I’m very self-assured, arrogant, bumptious, egotistical,
-               and maybe overweening but it’s not like that and for sure they got
+              think that I&apos;m very self-assured, arrogant, bumptious, egotistical,
+               and maybe overweening but it&apos;s not like that and for sure they got
                 it all wrong because once I start a relationship with someone,
                  I usually tell what I feel about it, what I like and what I dislike, 
                  things that make me happy and things that get me off my mood so that
@@ -29,17 +29,17 @@ export default function About(){
         <div className="border-l-3 border-red-400 absolute w-80 p-4 text-left top-90 right-50 text-xs">
             <h1 className="text-white font-bold">Personality</h1>
             <p>
-               I’m a patient; a meticulous person who enjoys working on very detailed systematized things such as Computers and science. I do my best when there is no disruption as I do not easily adjust to interference and changes once I start a project. Also, I like to work step by step at my own speed.
+               I&apos;m a patient meticulous person who enjoys working on very detailed systematized things such as Computers and science. I do my best when there is no disruption as I do not easily adjust to interference and changes once I start a project. Also, I like to work step by step at my own speed.
             </p>
         </div>
         <div className="border-l-3 border-red-400 absolute w-80 p-4 text-left top-120 left-130 text-xs">
             <h1 className="text-white font-bold">True Me</h1>
             <p>
-               As Abdulaziz, I scatter my efforts and find it difficult to concentrate except for a short period of time, and then only as long as my interest lasts. My well-being destroys patience and stability that makes me unsystematic, restless, and reliable. I want to act spontaneously, I’m governed by my feelings and I do things when and how I please myself without any restriction or advice from others.
+               As Abdulaziz&#39; I scatter my efforts and find it difficult to concentrate except for a short period of time&#39; and then only as long as my interest lasts. My well-being destroys patience and stability that makes me unsystematic, restless, and reliable. I want to act spontaneously, I’m governed by my feelings and I do things when and how I please myself without any restriction or advice from others.
             </p>
         </div>
         <div className="border-l-3 border-red-400 absolute  text-left top-150 right-40 text-xs p-2">
-            <h1 className="font-bold text-2xl">Let's Connect</h1>
+            <h1 className="font-bold text-2xl">Let&lsquo;s Connect</h1>
             <ul className="flex">
                 <li><Link href="https://wa.me/+255656792939"><FaWhatsappSquare className="size-10 hover:scale-120 p-2"/></Link></li>
                 <li><Link href="https://www.instagram.com/amafitta/"><FaInstagramSquare className="size-10 hover:scale-120 p-2"/></Link></li>
