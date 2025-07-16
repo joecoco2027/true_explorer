@@ -1,7 +1,6 @@
 import { FaArrowRight} from "react-icons/fa";
 import Image from "next/image"
 import Link from "next/link";
-import { getAllTalesData } from "@/app/tales/_lib/getAllTalesData";
 
 export default function SecondSection(){
     return (
