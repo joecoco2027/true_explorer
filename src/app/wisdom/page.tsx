@@ -12,7 +12,7 @@ export default async function Wisdom(){
                     <li key={slug} className="p-5 hover:scale-110">
                             <Link prefetch={false} href={`/wisdom/${slug}`}>
                                 <h1 className="text-2xl">{`${title}`}</h1>
-                                <Image src={cover} width={400} height={400} alt="Cover Image" className="rounded-2xl"/>
+                                <Image src="/images/wisdom/wisdom1.jpg" width={400} height={400} alt="Cover Image" className="rounded-2xl"/>
                             </Link>
                     </li> 
                 ))}
