@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getAllDiariesData } from "./_lib/getAllDiariesData";
 import Image from "next/image";
-export default async function Blogs(){
+export default async function Diaries(){
     const blogs = await getAllDiariesData();
     return (
         <div className="prose prose-xl dark:prose-invert container mx-auto px-4 flex flex-col justify-center align-middle self-center w-max text-center">

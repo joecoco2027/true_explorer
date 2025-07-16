@@ -2,9 +2,9 @@ import Image from "next/image"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 export default function TopSection(){
-    const router = useRouter()
+    const router = useRouter()  
     return (
-        <div className={`lg:h-200 md:h-175 sm:h-175 h-170 bg-[url(/images/bg2.png))] lg:bg-cover bg-cover bg-center bg-no-repeat bg-white dark:bg-gray-900 top-0 relative`}>
+        <div className={`lg:h-230 md:h-175 sm:h-175 h-170 bg-[url(/images/bg2.png))] lg:bg-cover bg-cover bg-center bg-no-repeat bg-white dark:bg-gray-900 top-0 relative`}>
             <div className="absolute lg:top-130 lg:left-75 md:top-100 top-120 left-2 text-black">
                 <h1 className="text-5xl scale-y-200 font-extrabold fill-transparent text-2xl text-stroke-white">I&apos;M ABDULAZIZ M.</h1>
                 <br />

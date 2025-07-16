@@ -18,11 +18,11 @@ export default function Home() {
     "https://www.youtube.com/watch?v=EztPwQeFPfU",
     "https://www.youtube.com/watch?v=iARCGltkof8",
     "https://www.youtube.com/watch?v=iTN5WO5-rjE",
-    "https://www.youtube.com/watch?v=BX9qznRjLPI"
+
   ];
 
   return (
-    <div className='flex flex-row flex-wrap self-center items-center justify-center text-center align-middle bg-black '> 
+    <div className='flex flex-row flex-wrap self-center items-center justify-center text-center align-middle dark:bg-black '> 
       {videoUrls.map((url, index) => (
         <YouTubeMeta key={index} url={url} />
       ))}

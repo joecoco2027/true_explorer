@@ -5,6 +5,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function HeaderNav() {
   const router = useRouter();
@@ -50,11 +51,11 @@ export default function HeaderNav() {
   };
 
   return (
-      <nav className={`${isSticky ? 'fixed top-0 bg-white shadow-md' : 'relative bg-transparent'} h-14 w-full px-4 bg-gray-400 dark:bg-gray-800 dark:text-white shadow-md border-b-2`}>
+      <nav className={`${isSticky ? 'fixed top-0 bg-white shadow-md' : 'relative bg-transparent'} h-20 w-full p-4 bg-gray-400 dark:bg-gray-800 dark:text-white shadow-md border-b-2`}>
         <div className="flex justify-between items-center h-14">
           <div className="text-veryDarkBlueText text-detail font-bold">
-            <Link className="text-veryDarkBlueText dark:text-white hover:text-blue-500" href="/">
-              TRUEEXPLORER
+            <Link className="text-veryDarkBlueText dark:text-white hover:text-blue-500 flex align-middle self-center items-center" href="/">
+              <Image src="/images/trueexplorer.png" width={300} height={100} alt="True Explorer Logo"/>
             </Link>
           </div>
           <div className="">

@@ -7,7 +7,6 @@ export default function Home(){
     <main>  
       <TopSection />
       <SecondSection />
-      <SecondSection />
     </main>
   )
 }

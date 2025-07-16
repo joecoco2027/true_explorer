@@ -1,11 +1,11 @@
 import { FaWhatsappSquare, FaFacebookSquare,  FaInstagramSquare, FaYoutubeSquare, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6"
-import { SiGmail } from "react-icons/si"
+import { FaXTwitter } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
 import Link from "next/link";
 
 export default function About(){
     return(
-        <div className="lg:h-200 md:h-,175 sm:h-175 h-170 bg-[url(/images/bg4.png))] lg:bg-cover bg-cover bg-center bg-no-repeat bg-white dark:bg-gray-900 top-0 relative text-center flex flex-col">
+        <div className="lg:h-200 md:h-,175 sm:h-175 h-170 bg-[url(/images/bg4.png))] lg:bg-cover bg-cover bg-center bg-no-repeat bg-white dark:bg-gray-900 top-0 relative text-center flex flex-col text-white">
             <h2 className="text-gray-400 text-2xl">Learn More</h2>
             <h1 className="font-bold text-6xl text-cyan-700">ABOUT ME</h1>
             <p className="text-center text-wrap mx-100 text-gray-500">
