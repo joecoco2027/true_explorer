@@ -8,7 +8,7 @@ export default async function Wisdom(){
             <h1 className="my-4 text-center text-teal-800 text-9xs font-bold ">Wisdoms</h1>
             <p>Here are some recent Wisdoms</p>
             <ul className="px-5 ml-4 flex flex-1/2 flex-wrap">
-                {wisdoms.map(({ slug, metadata: { title, cover}}) => (
+                {wisdoms.map(({ slug, metadata: { title}}) => (
                     <li key={slug} className="p-5 hover:scale-110">
                             <Link prefetch={false} href={`/wisdom/${slug}`}>
                                 <h1 className="text-2xl">{`${title}`}</h1>
